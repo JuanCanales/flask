@@ -1,0 +1,13 @@
+<h1>Bienvenida {{city}} </h1>
+
+{% if city == "Barcelona" %}
+    <h2> Benvinguts paseu paseu !</h2>
+{% else %} 
+    <h2> Welcome on board !</h2>
+{% endif %} 
+
+
+
+{% for n in num %}
+    <h3> {{ n }}</h2>
+{% endfor %} 

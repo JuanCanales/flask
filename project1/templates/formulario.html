@@ -1,0 +1,8 @@
+<!-- Con extends indicamos que este bloque es parte del index.html , es como un include -->
+{% extends "index.html" %}
+{% block body %}
+    <form method="POST" action="{{ url_for('contacto_function') }}">
+        <input type="text" name="nombre" placeholder="Informe su nombre">
+        <button>Enviar</button>
+    </form>
+{% endblock %}
